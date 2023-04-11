@@ -1,0 +1,180 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  margin-left: 90vw;
+  text-decoration: none;
+  color: black;
+}
+
+href {
+  color: black;
+}
+
+/* Set font-size and line-height for body */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Set hyperlink styles */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Set header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+h1 {
+  padding-left: 1%;
+}
+
+/* Set footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Set main styles */
+main {
+  margin: 1rem;
+}
+
+.box {
+  box-sizing: border-box;
+  border: 10px solid black;
+  width: 100%;
+  height: 95vh; /* or any desired height */
+}
+
+/* Set media query for responsive design */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+img {
+  width: 20%;
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.playing {
+  font-size: 20px;
+  display: flex;
+  margin-right: 15%;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+iframe {
+  margin-left: 33%;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -260px; /* adjust this value to move the element up */
+  opacity: 10%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.ham2 .top {
+  stroke-dasharray: 40 121;
+}
+.ham2 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham2.active .top {
+  stroke-dashoffset: -102px;
+}
+.ham2.active .bottom {
+  stroke-dashoffset: -102px;
+}
